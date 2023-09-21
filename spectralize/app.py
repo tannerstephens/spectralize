@@ -3,14 +3,14 @@ from flask import Flask
 from .routes import routes
 
 
-class App:
+class App(Flask):
     def __init__(self, config="spectralize.config.Config"):
-        self.app = Flask(__name__)
-        self.app.config.from_object(config)
+        super().__init__(__name__)
+        self.config.from_object(config)
         self.register_routes()
 
     def register_routes(self):
-        self.app.register_blueprint(routes)
+        self.register_blueprint(routes)
 
     def dev_server(self):
-        self.app.run(debug=True, threaded=True, host="0.0.0.0", port=8000)
+        self.run(debug=True, threaded=True, host="0.0.0.0", port=8000)
