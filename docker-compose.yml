@@ -1,0 +1,8 @@
+version: '2'
+
+services:
+  spectralize:
+    build: .
+    restart: always
+    ports:
+      - "3456:8000"
