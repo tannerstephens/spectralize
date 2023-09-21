@@ -1,0 +1,9 @@
+name: "glasses"
+chance: 0.50
+features:
+  - path: "3.png"
+    x: 1300
+    y: 200
+  - path: "4.png"
+    x: 925
+    y: 25

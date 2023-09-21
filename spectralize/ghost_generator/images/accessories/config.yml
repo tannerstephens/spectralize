@@ -1,0 +1,9 @@
+name: "accessory"
+chance: 0.50
+features:
+  - path: "1.png"
+    x: 850
+    y: 900
+  - path: "2.png"
+    x: 950
+    y: 900

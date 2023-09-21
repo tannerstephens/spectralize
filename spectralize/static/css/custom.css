@@ -1,0 +1,17 @@
+html {
+    background-color: #333;
+}
+
+.is-spooky {
+    background-color: #eba834;
+    color: #fff;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-color: #888;
+    border-style: solid;
+    background-color: #555;
+    aspect-ratio: 120/137;
+}
